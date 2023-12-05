@@ -1,0 +1,41 @@
+body{
+    font-family: sans-serif;
+    background-color: azure;
+    
+}
+
+.sidebar{
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidebar a{
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    padding: 5px;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+  }
+
+  .main {
+    font-size: 20px;
+    margin-left: 160px; 
+    padding: 0px 10px;
+  }
+
+  @media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
